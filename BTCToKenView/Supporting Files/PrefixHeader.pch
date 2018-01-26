@@ -1,0 +1,81 @@
+//
+//  PrefixHeader.pch
+//  BTCToKenView
+//
+//  Created by wangyi on 2018/1/22.
+//  Copyright © 2018年 wangyi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "UIColor+Colours.h"
+
+
+//#if DEBUG
+//static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+//#else
+//static const DDLogLevel ddLogLevel = DDLogLevelOff;
+//#endif
+#endif
+
+//-- 设置在release模式下NSLog无效
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
+#import <MJRefresh/MJRefresh.h>
+#import "AppMacro.h"
+#import "ServiceIDApi.h"
+#import "EnvironmentMacro.h"
+//#import "NotificationMacro.h"
+#import "AFNetworking.h"
+//#import "MJDIYHeader.h"
+//-- OSVersionIsAtLeastiOS7
+#import "ThemeManage.h"
+#import "UIButton+ThemeChange.h"
+#import "UILabel+ThemeChange.h"
+#import "UINavigationBar+ThemeChange.h"
+#import "UINavigationController+NavigationAnimation.h"
+#import "UIView+ThemeChange.h"
+#import "UITabBar+ThemeChange.h"
+#import "HTTPServices.h"
+
+#define OSVersionIsAtLeastiOS7 (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+#define OSVersionIsAtLeastiOS8 ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
+
+//-- 屏幕宽度、高度
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds
+
+//适配ios11 scrollView偏移问题
+#define  adjustsScrollViewInsets(scrollView)\
+do {\
+_Pragma("clang diagnostic push")\
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")\
+if ([scrollView respondsToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+NSMethodSignature *signature = [UIScrollView instanceMethodSignatureForSelector:@selector(setContentInsetAdjustmentBehavior:)];\
+NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];\
+NSInteger argument = 2;\
+invocation.target = scrollView;\
+invocation.selector = @selector(setContentInsetAdjustmentBehavior:);\
+[invocation setArgument:&argument atIndex:2];\
+[invocation retainArguments];\
+[invocation invoke];\
+}\
+_Pragma("clang diagnostic pop")\
+} while (0)
+
+
+#endif /* PrefixHeader_pch */
