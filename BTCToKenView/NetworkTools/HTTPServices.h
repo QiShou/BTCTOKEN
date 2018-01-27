@@ -20,6 +20,8 @@
 
 }
 
+//@property (nonatomic,strong)AFHTTPSessionManager *httpRequestManager;
+- (instancetype _Nullable )init;
 +(instancetype _Nullable )sharedInstance;
 
 - (void)GET:(NSString *)urlString paramaters:(id)paramters success:(void (^)(HTTPServices *request))success failure:(void(^)(NSError *error))failure ;

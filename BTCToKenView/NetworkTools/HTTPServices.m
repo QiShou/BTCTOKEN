@@ -32,7 +32,7 @@ static AFHTTPSessionManager *_httpRequestManager;
         _httpRequestManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"application/json", @"text/json",@"text/html", nil];
         _httpRequestManager.requestSerializer = [AFHTTPRequestSerializer serializer];
 //         _httpRequestManager.responseSerializer = [AFJSONResponseSerializer serializer];
-
+      
     });
     
     return _defaultManager;
@@ -181,11 +181,19 @@ static AFHTTPSessionManager *_httpRequestManager;
                                                      success:(nullable void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success
                                                      failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error))failure {
     
+    
+    
     NSString *strURL;
     if (strURLSuffix) {
         strURL = [MAIN_URL stringByAppendingString:strURLSuffix];
     } else {
         strURL = MAIN_URL;
+    }
+    
+    //设置请求头 
+    if ([strURLSuffix isEqualToString:AC_Logout]) {
+        NSString *string = [[NSUserDefaults standardUserDefaults] objectForKey:@"HIPPO-WDTOKEN"];
+        [_httpRequestManager.requestSerializer setValue:string forHTTPHeaderField:@"HIPPO-WDTOKEN"];
     }
 
     return [_httpRequestManager POST:strURL parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {

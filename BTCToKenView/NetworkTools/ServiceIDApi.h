@@ -11,17 +11,17 @@
 /**
  *  移动用户登录到云平台
  */
-static NSString * const JSCSP_SYS_LOGIN = @"JSCSP_SYS_LOGIN";
+static NSString * const AC_Register = @"/tvc/user/register.do";
 
 /**
  *  移动用户登录
  */
-static NSString * const AC_JSSERVICE_LOGIN = @"ac.jsservice.login";
+static NSString * const AC_Login = @"/tvc/user/login.do";
 
 /**
  *  新增/修改项目信息接口
  */
-static NSString * const AC_JSSERVICE_PROJECT = @"ac.jsservice.project";
+static NSString * const AC_Logout = @"/tvc/user/logout.do";
 /**
  *  新增/修改停车场项目信息接口（新）
  */

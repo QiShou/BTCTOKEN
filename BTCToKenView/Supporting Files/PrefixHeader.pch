@@ -40,6 +40,8 @@
 #import "EnvironmentMacro.h"
 //#import "NotificationMacro.h"
 #import "AFNetworking.h"
+#import "MJExtension.h"
+
 //#import "MJDIYHeader.h"
 //-- OSVersionIsAtLeastiOS7
 #import "ThemeManage.h"

@@ -53,6 +53,9 @@
 		B0B9B462201762DF00306AA3 /* MySecTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B9B460201762DF00306AA3 /* MySecTableViewCell.xib */; };
 		B0F298412018EA2100CCF08E /* HTTPServices.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F2983F2018EA2100CCF08E /* HTTPServices.m */; };
 		B0F298442018EA5300CCF08E /* UIDevice+Version.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F298422018EA5300CCF08E /* UIDevice+Version.m */; };
+		B0F29847201B772100CCF08E /* HTTPBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F29846201B772100CCF08E /* HTTPBaseResponse.m */; };
+		B0F2984B201B7B3800CCF08E /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F2984A201B7B3800CCF08E /* LoginResponse.m */; };
+		B0F2984E201B7D1900CCF08E /* RegistResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F2984D201B7D1900CCF08E /* RegistResponse.m */; };
 		B0F6B35E201614FE005890ED /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F6B35C201614FE005890ED /* HomeViewController.m */; };
 		B0F6B35F201614FE005890ED /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6B35D201614FE005890ED /* HomeViewController.xib */; };
 		B0F6B36320161514005890ED /* GlobConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F6B36120161514005890ED /* GlobConditionsViewController.m */; };
@@ -161,6 +164,12 @@
 		B0F298402018EA2100CCF08E /* HTTPServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServices.h; sourceTree = "<group>"; };
 		B0F298422018EA5300CCF08E /* UIDevice+Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Version.m"; sourceTree = "<group>"; };
 		B0F298432018EA5300CCF08E /* UIDevice+Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Version.h"; sourceTree = "<group>"; };
+		B0F29845201B772100CCF08E /* HTTPBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPBaseResponse.h; sourceTree = "<group>"; };
+		B0F29846201B772100CCF08E /* HTTPBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPBaseResponse.m; sourceTree = "<group>"; };
+		B0F29849201B7B3800CCF08E /* LoginResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginResponse.h; sourceTree = "<group>"; };
+		B0F2984A201B7B3800CCF08E /* LoginResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginResponse.m; sourceTree = "<group>"; };
+		B0F2984C201B7D1900CCF08E /* RegistResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistResponse.h; sourceTree = "<group>"; };
+		B0F2984D201B7D1900CCF08E /* RegistResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistResponse.m; sourceTree = "<group>"; };
 		B0F6B35B201614FE005890ED /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B0F6B35C201614FE005890ED /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B0F6B35D201614FE005890ED /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -231,7 +240,7 @@
 				B0215CD42015EF0B00FBF221 /* AppDelegate.h */,
 				B0215CD52015EF0B00FBF221 /* AppDelegate.m */,
 				B0215CED2015F28100FBF221 /* General */,
-				B0215CEC2015F28100FBF221 /* Network */,
+				B0215CEC2015F28100FBF221 /* NetworkTools */,
 				B0215CEA2015F28100FBF221 /* Main */,
 				B0215D2F2015F29100FBF221 /* Supporting Files */,
 			);
@@ -261,16 +270,17 @@
 			path = BaseViewController;
 			sourceTree = "<group>";
 		};
-		B0215CEC2015F28100FBF221 /* Network */ = {
+		B0215CEC2015F28100FBF221 /* NetworkTools */ = {
 			isa = PBXGroup;
 			children = (
+				B0F29848201B7AE200CCF08E /* ResponseData */,
 				B0F298402018EA2100CCF08E /* HTTPServices.h */,
 				B0F2983F2018EA2100CCF08E /* HTTPServices.m */,
 				B0F298432018EA5300CCF08E /* UIDevice+Version.h */,
 				B0F298422018EA5300CCF08E /* UIDevice+Version.m */,
 				B0215D302015F33C00FBF221 /* ServiceIDApi.h */,
 			);
-			path = Network;
+			path = NetworkTools;
 			sourceTree = "<group>";
 		};
 		B0215CED2015F28100FBF221 /* General */ = {
@@ -373,6 +383,19 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B0F29848201B7AE200CCF08E /* ResponseData */ = {
+			isa = PBXGroup;
+			children = (
+				B0F29845201B772100CCF08E /* HTTPBaseResponse.h */,
+				B0F29846201B772100CCF08E /* HTTPBaseResponse.m */,
+				B0F29849201B7B3800CCF08E /* LoginResponse.h */,
+				B0F2984A201B7B3800CCF08E /* LoginResponse.m */,
+				B0F2984C201B7D1900CCF08E /* RegistResponse.h */,
+				B0F2984D201B7D1900CCF08E /* RegistResponse.m */,
+			);
+			path = ResponseData;
 			sourceTree = "<group>";
 		};
 		B0F6B34B201614D4005890ED /* NewsMorViewController */ = {
@@ -699,6 +722,7 @@
 				B0215D282015F28100FBF221 /* NSURL+imageURL.m in Sources */,
 				B0215D212015F28100FBF221 /* NSString+compareWithAscill.m in Sources */,
 				B016B820201B133E00633942 /* LoginCollectionViewCell.m in Sources */,
+				B0F2984E201B7D1900CCF08E /* RegistResponse.m in Sources */,
 				B0215D1E2015F28100FBF221 /* NSDictionary+JsonString.m in Sources */,
 				B0B9B4552017517D00306AA3 /* UILabel+ThemeChange.m in Sources */,
 				B0215D2D2015F28100FBF221 /* UIView+DCAnimationKit.m in Sources */,
@@ -710,6 +734,7 @@
 				B0F6C2222018852E00F3A29F /* HomeCollectionViewCell.m in Sources */,
 				B0B9B461201762DF00306AA3 /* MySecTableViewCell.m in Sources */,
 				B0215D1D2015F28100FBF221 /* NSDictionary+forID.m in Sources */,
+				B0F2984B201B7B3800CCF08E /* LoginResponse.m in Sources */,
 				B0215D292015F28100FBF221 /* UIColor+Colours.m in Sources */,
 				B0F6C22720189C5700F3A29F /* HomeTableViewCell.m in Sources */,
 				B0215D392015F68B00FBF221 /* NSArray+Log.m in Sources */,
@@ -718,6 +743,7 @@
 				B0215D1A2015F28100FBF221 /* NSDate+Compare.m in Sources */,
 				B0F6B35E201614FE005890ED /* HomeViewController.m in Sources */,
 				B0B9B4532017517D00306AA3 /* UIView+ThemeChange.m in Sources */,
+				B0F29847201B772100CCF08E /* HTTPBaseResponse.m in Sources */,
 				B0215D222015F28100FBF221 /* NSString+convert.m in Sources */,
 				B0215CD62015EF0B00FBF221 /* AppDelegate.m in Sources */,
 				B0B9B4542017517D00306AA3 /* UITabBar+ThemeChange.m in Sources */,
