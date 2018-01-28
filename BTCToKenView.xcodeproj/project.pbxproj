@@ -58,6 +58,8 @@
 		B0B9B45D20175D9800306AA3 /* LoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B9B45B20175D9800306AA3 /* LoginTableViewCell.xib */; };
 		B0B9B461201762DF00306AA3 /* MySecTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B9B45F201762DF00306AA3 /* MySecTableViewCell.m */; };
 		B0B9B462201762DF00306AA3 /* MySecTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B9B460201762DF00306AA3 /* MySecTableViewCell.xib */; };
+		B0BED018201DB092009AE047 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BED017201DB092009AE047 /* HomeHeaderView.m */; };
+		B0BED01A201DB136009AE047 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BED019201DB136009AE047 /* HomeHeaderView.xib */; };
 		B0F298412018EA2100CCF08E /* HTTPServices.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F2983F2018EA2100CCF08E /* HTTPServices.m */; };
 		B0F298442018EA5300CCF08E /* UIDevice+Version.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F298422018EA5300CCF08E /* UIDevice+Version.m */; };
 		B0F29847201B772100CCF08E /* HTTPBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F29846201B772100CCF08E /* HTTPBaseResponse.m */; };
@@ -178,6 +180,9 @@
 		B0B9B45E201762DF00306AA3 /* MySecTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySecTableViewCell.h; sourceTree = "<group>"; };
 		B0B9B45F201762DF00306AA3 /* MySecTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySecTableViewCell.m; sourceTree = "<group>"; };
 		B0B9B460201762DF00306AA3 /* MySecTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySecTableViewCell.xib; sourceTree = "<group>"; };
+		B0BED016201DB092009AE047 /* HomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
+		B0BED017201DB092009AE047 /* HomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderView.m; sourceTree = "<group>"; };
+		B0BED019201DB136009AE047 /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		B0F2983F2018EA2100CCF08E /* HTTPServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServices.m; sourceTree = "<group>"; };
 		B0F298402018EA2100CCF08E /* HTTPServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServices.h; sourceTree = "<group>"; };
 		B0F298422018EA5300CCF08E /* UIDevice+Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Version.m"; sourceTree = "<group>"; };
@@ -582,6 +587,9 @@
 				B0F6C22420189C5700F3A29F /* HomeTableViewCell.h */,
 				B0F6C22520189C5700F3A29F /* HomeTableViewCell.m */,
 				B0F6C22620189C5700F3A29F /* HomeTableViewCell.xib */,
+				B0BED016201DB092009AE047 /* HomeHeaderView.h */,
+				B0BED017201DB092009AE047 /* HomeHeaderView.m */,
+				B0BED019201DB136009AE047 /* HomeHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -658,6 +666,7 @@
 			files = (
 				B0F6B37A20163E7A005890ED /* MyFirstSecTableViewCell.xib in Resources */,
 				B0F6B36920161553005890ED /* NewsMorViewController.xib in Resources */,
+				B0BED01A201DB136009AE047 /* HomeHeaderView.xib in Resources */,
 				B016B821201B133E00633942 /* LoginCollectionViewCell.xib in Resources */,
 				B0215CE12015EF0B00FBF221 /* LaunchScreen.storyboard in Resources */,
 				B0B9B462201762DF00306AA3 /* MySecTableViewCell.xib in Resources */,
@@ -763,6 +772,7 @@
 				B0215CE42015EF0B00FBF221 /* main.m in Sources */,
 				B0B9B4562017517D00306AA3 /* UIButton+ThemeChange.m in Sources */,
 				B0B9B4522017517D00306AA3 /* ThemeManage.m in Sources */,
+				B0BED018201DB092009AE047 /* HomeHeaderView.m in Sources */,
 				B0F6B36820161553005890ED /* NewsMorViewController.m in Sources */,
 				B0215D1C2015F28100FBF221 /* NSDateFormatter+formatString.m in Sources */,
 				B0F6C2222018852E00F3A29F /* HomeCollectionViewCell.m in Sources */,

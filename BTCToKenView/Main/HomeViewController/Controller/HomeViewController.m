@@ -10,7 +10,8 @@
 #import "JSHVisitMenuView.h"
 #import "HomeCollectionViewCell.h"
 #import "BTCSearchViewController.h"
-@interface HomeViewController ()<UIScrollViewDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>{
+#import "HomeHeaderView.h"
+@interface HomeViewController ()<UIScrollViewDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource,BaseHomeHeaderDelegate>{
     NSInteger _saveIndex;
     BOOL _isClickMenu;
 
@@ -21,24 +22,31 @@
 //@property (strong, nonatomic) UICollectionView *collectionView;
 
 @property (strong, nonatomic) JSHVisitMenuView *menuView;
+@property (nonatomic,strong) HomeHeaderView *homeHeaderView;
+
 
 @end
 
 @implementation HomeViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setTitle:@"币行情"];
-    [self setLeftBarButtonWithImage:[UIImage imageNamed:@"搜索"] size: CGSizeMake(40, 25)];
-    [self.view NightWithType:UIViewColorTypeNormal];
+//    [self setLeftBarButtonWithImage:[UIImage imageNamed:@"搜索"] size: CGSizeMake(40, 25)];
+//    [self.view NightWithType:UIViewColorTypeNormal];
     [self setUpUI];
     [self setMenuView];
 
 }
 #pragma mark - 初始化View
 - (void)setUpUI {
+    
+    
+    
+    self.homeHeaderView = [[HomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    self.homeHeaderView.delegate = self;
+    [self setnavigationView:self.homeHeaderView];
     
 
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
@@ -76,6 +84,29 @@
         _isClickMenu = YES;
      [weakSelf.collectionView setContentOffset:CGPointMake(index*weakSelf.collectionView.frame.size.width,0) animated:NO];
     }];
+}
+#pragma mark - homeHeaderView
+- (void)didSearchWithContent:(HomeHeaderView *)view  btn:(UIButton *)sender{
+    switch (sender.tag) {
+        case 1000:{
+                
+            }
+            break;
+        case 1001:{
+            
+        }
+            break;
+        case 1002:{
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+- (void)didSearchWithContent:(HomeHeaderView *)view segmentController:(UISegmentedControl *)sender {
+    
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;

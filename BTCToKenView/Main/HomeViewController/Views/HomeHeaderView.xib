@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aff-vf-Ijw">
+                    <rect key="frame" x="117.5" y="8" width="90" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="jIf-YU-0B2"/>
+                        <constraint firstAttribute="height" constant="35" id="wKX-cB-iMq"/>
+                    </constraints>
+                    <segments>
+                        <segment title="自选"/>
+                        <segment title="市场"/>
+                    </segments>
+                    <connections>
+                        <action selector="clickSueger:" destination="iN0-l3-epB" eventType="valueChanged" id="7HK-z3-9Sp"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2O-F1-KgJ">
+                    <rect key="frame" x="8" y="9.5" width="32" height="32"/>
+                    <state key="normal" image="搜索"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="ce7-ea-ypb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6l-gB-xgW">
+                    <rect key="frame" x="285" y="9" width="32" height="32"/>
+                    <state key="normal" image="搜索"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="1hI-Bt-osE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJS-eb-OGh">
+                    <rect key="frame" x="245" y="11" width="32" height="32"/>
+                    <state key="normal" image="搜索"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="rv4-kE-tsV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="H2O-F1-KgJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="E8l-lE-Tf8"/>
+                <constraint firstItem="aff-vf-Ijw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HUj-Wg-QQi"/>
+                <constraint firstItem="Y6l-gB-xgW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rco-Az-9Pj"/>
+                <constraint firstItem="aff-vf-Ijw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TMz-uC-tqR"/>
+                <constraint firstAttribute="trailing" secondItem="Y6l-gB-xgW" secondAttribute="trailing" constant="8" id="V9Z-JJ-udY"/>
+                <constraint firstItem="VJS-eb-OGh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lHt-2n-EDj"/>
+                <constraint firstItem="H2O-F1-KgJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nhX-hd-90V"/>
+                <constraint firstItem="Y6l-gB-xgW" firstAttribute="leading" secondItem="VJS-eb-OGh" secondAttribute="trailing" constant="8" id="qhD-8d-OGC"/>
+                <constraint firstItem="H2O-F1-KgJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qha-WN-EWB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconBtn" destination="VJS-eb-OGh" id="vfx-U3-d8F"/>
+                <outlet property="massgeBtn" destination="Y6l-gB-xgW" id="C5j-fb-BQU"/>
+                <outlet property="searchBtn" destination="H2O-F1-KgJ" id="CQg-Cn-8Ed"/>
+                <outlet property="segmentController" destination="aff-vf-Ijw" id="atS-vS-OFd"/>
+            </connections>
+            <point key="canvasLocation" x="-255.5" y="-869.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="搜索" width="32" height="32"/>
+    </resources>
+</document>

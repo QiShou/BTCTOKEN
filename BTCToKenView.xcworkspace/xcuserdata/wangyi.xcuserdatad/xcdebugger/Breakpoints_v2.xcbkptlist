@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BTCToKenView/Main/HomeViewController/Controller/HomeViewController.m"
-            timestampString = "538734520.846964"
+            timestampString = "538821156.4114209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-setMenuView"
             landmarkType = "7">
          </BreakpointContent>
@@ -305,38 +305,6 @@
             endingLineNumber = "47"
             landmarkName = "-searchBarTextDidBeginEditing:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[BTCSearchViewController searchBarTextDidBeginEditing:]"
-                  moduleName = "BTCToKenView"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wangyi/Desktop/BTCTOKEN/BTCToKenView/Main/HomeViewController/Controller/BTCSearchViewController.m"
-                  timestampString = "538733247.497396"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[BTCSearchViewController searchBarTextDidBeginEditing:]"
-                  moduleName = "BTCToKenView"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wangyi/Desktop/BTCTOKEN/BTCToKenView/Main/HomeViewController/Controller/BTCSearchViewController.m"
-                  timestampString = "538733247.499656"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "94">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -352,6 +320,38 @@
             startingLineNumber = "67"
             endingLineNumber = "67"
             landmarkName = "-switchAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BTCToKenView/Main/HomeViewController/Controller/HomeViewController.m"
+            timestampString = "538821156.4123369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-didSearchWithContent:btn:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BTCToKenView/Main/HomeViewController/Views/HomeHeaderView.m"
+            timestampString = "538821156.412683"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "-initWithFrame:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
