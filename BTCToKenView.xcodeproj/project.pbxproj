@@ -41,6 +41,13 @@
 		B0215D392015F68B00FBF221 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B0215D382015F68A00FBF221 /* NSArray+Log.m */; };
 		B0215D3C2015FBE400FBF221 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0215D3A2015FBE400FBF221 /* RootViewController.m */; };
 		B0215D452015FDF900FBF221 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0215D442015FDF900FBF221 /* Info.plist */; };
+		B0B2B132201C4B7000D34762 /* LogOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B2B130201C4B7000D34762 /* LogOutViewController.m */; };
+		B0B2B133201C4B7000D34762 /* LogOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B2B131201C4B7000D34762 /* LogOutViewController.xib */; };
+		B0B2B137201C598300D34762 /* BTCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B2B135201C598300D34762 /* BTCSearchViewController.m */; };
+		B0B2B138201C598300D34762 /* BTCSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B2B136201C598300D34762 /* BTCSearchViewController.xib */; };
+		B0B2B13C201C740000D34762 /* BTCSearInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B2B13A201C740000D34762 /* BTCSearInfoViewController.m */; };
+		B0B2B13D201C740000D34762 /* BTCSearInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B2B13B201C740000D34762 /* BTCSearInfoViewController.xib */; };
+		B0B2B140201C770B00D34762 /* BtcDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B2B13F201C770B00D34762 /* BtcDataResponse.m */; };
 		B0B9B4522017517D00306AA3 /* ThemeManage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B9B4462017517C00306AA3 /* ThemeManage.m */; };
 		B0B9B4532017517D00306AA3 /* UIView+ThemeChange.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B9B4492017517C00306AA3 /* UIView+ThemeChange.m */; };
 		B0B9B4542017517D00306AA3 /* UITabBar+ThemeChange.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B9B44A2017517C00306AA3 /* UITabBar+ThemeChange.m */; };
@@ -142,6 +149,17 @@
 		B0215D3A2015FBE400FBF221 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		B0215D3B2015FBE400FBF221 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		B0215D442015FDF900FBF221 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BTCToKenView/Info.plist; sourceTree = SOURCE_ROOT; };
+		B0B2B12F201C4B7000D34762 /* LogOutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogOutViewController.h; sourceTree = "<group>"; };
+		B0B2B130201C4B7000D34762 /* LogOutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogOutViewController.m; sourceTree = "<group>"; };
+		B0B2B131201C4B7000D34762 /* LogOutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutViewController.xib; sourceTree = "<group>"; };
+		B0B2B134201C598300D34762 /* BTCSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTCSearchViewController.h; sourceTree = "<group>"; };
+		B0B2B135201C598300D34762 /* BTCSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTCSearchViewController.m; sourceTree = "<group>"; };
+		B0B2B136201C598300D34762 /* BTCSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BTCSearchViewController.xib; sourceTree = "<group>"; };
+		B0B2B139201C740000D34762 /* BTCSearInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTCSearInfoViewController.h; sourceTree = "<group>"; };
+		B0B2B13A201C740000D34762 /* BTCSearInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTCSearInfoViewController.m; sourceTree = "<group>"; };
+		B0B2B13B201C740000D34762 /* BTCSearInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BTCSearInfoViewController.xib; sourceTree = "<group>"; };
+		B0B2B13E201C770B00D34762 /* BtcDataResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BtcDataResponse.h; sourceTree = "<group>"; };
+		B0B2B13F201C770B00D34762 /* BtcDataResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BtcDataResponse.m; sourceTree = "<group>"; };
 		B0B9B4462017517C00306AA3 /* ThemeManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManage.m; sourceTree = "<group>"; };
 		B0B9B4472017517C00306AA3 /* UIView+ThemeChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ThemeChange.h"; sourceTree = "<group>"; };
 		B0B9B4482017517C00306AA3 /* UINavigationBar+ThemeChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ThemeChange.h"; sourceTree = "<group>"; };
@@ -394,6 +412,8 @@
 				B0F2984A201B7B3800CCF08E /* LoginResponse.m */,
 				B0F2984C201B7D1900CCF08E /* RegistResponse.h */,
 				B0F2984D201B7D1900CCF08E /* RegistResponse.m */,
+				B0B2B13E201C770B00D34762 /* BtcDataResponse.h */,
+				B0B2B13F201C770B00D34762 /* BtcDataResponse.m */,
 			);
 			path = ResponseData;
 			sourceTree = "<group>";
@@ -482,6 +502,12 @@
 				B0F6B36A20161569005890ED /* MYInfoViewController.h */,
 				B0F6B36B20161569005890ED /* MYInfoViewController.m */,
 				B0F6B36C20161569005890ED /* MYInfoViewController.xib */,
+				B016B818201B0C6500633942 /* LoginViewController.h */,
+				B016B819201B0C6600633942 /* LoginViewController.m */,
+				B016B81A201B0C6600633942 /* LoginViewController.xib */,
+				B0B2B12F201C4B7000D34762 /* LogOutViewController.h */,
+				B0B2B130201C4B7000D34762 /* LogOutViewController.m */,
+				B0B2B131201C4B7000D34762 /* LogOutViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -505,6 +531,9 @@
 				B0B9B45E201762DF00306AA3 /* MySecTableViewCell.h */,
 				B0B9B45F201762DF00306AA3 /* MySecTableViewCell.m */,
 				B0B9B460201762DF00306AA3 /* MySecTableViewCell.xib */,
+				B016B81D201B133E00633942 /* LoginCollectionViewCell.h */,
+				B016B81E201B133E00633942 /* LoginCollectionViewCell.m */,
+				B016B81F201B133E00633942 /* LoginCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -525,9 +554,12 @@
 				B0F6B35B201614FE005890ED /* HomeViewController.h */,
 				B0F6B35C201614FE005890ED /* HomeViewController.m */,
 				B0F6B35D201614FE005890ED /* HomeViewController.xib */,
-				B016B818201B0C6500633942 /* LoginViewController.h */,
-				B016B819201B0C6600633942 /* LoginViewController.m */,
-				B016B81A201B0C6600633942 /* LoginViewController.xib */,
+				B0B2B134201C598300D34762 /* BTCSearchViewController.h */,
+				B0B2B135201C598300D34762 /* BTCSearchViewController.m */,
+				B0B2B136201C598300D34762 /* BTCSearchViewController.xib */,
+				B0B2B139201C740000D34762 /* BTCSearInfoViewController.h */,
+				B0B2B13A201C740000D34762 /* BTCSearInfoViewController.m */,
+				B0B2B13B201C740000D34762 /* BTCSearInfoViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -550,9 +582,6 @@
 				B0F6C22420189C5700F3A29F /* HomeTableViewCell.h */,
 				B0F6C22520189C5700F3A29F /* HomeTableViewCell.m */,
 				B0F6C22620189C5700F3A29F /* HomeTableViewCell.xib */,
-				B016B81D201B133E00633942 /* LoginCollectionViewCell.h */,
-				B016B81E201B133E00633942 /* LoginCollectionViewCell.m */,
-				B016B81F201B133E00633942 /* LoginCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -633,9 +662,12 @@
 				B0215CE12015EF0B00FBF221 /* LaunchScreen.storyboard in Resources */,
 				B0B9B462201762DF00306AA3 /* MySecTableViewCell.xib in Resources */,
 				B0B9B45D20175D9800306AA3 /* LoginTableViewCell.xib in Resources */,
+				B0B2B133201C4B7000D34762 /* LogOutViewController.xib in Resources */,
 				B0F6B36E20161569005890ED /* MYInfoViewController.xib in Resources */,
 				B0215CDE2015EF0B00FBF221 /* Assets.xcassets in Resources */,
 				B0F6B36420161514005890ED /* GlobConditionsViewController.xib in Resources */,
+				B0B2B138201C598300D34762 /* BTCSearchViewController.xib in Resources */,
+				B0B2B13D201C740000D34762 /* BTCSearInfoViewController.xib in Resources */,
 				B0F6C2232018852E00F3A29F /* HomeCollectionViewCell.xib in Resources */,
 				B016B81C201B0C6800633942 /* LoginViewController.xib in Resources */,
 				B0215D452015FDF900FBF221 /* Info.plist in Resources */,
@@ -712,11 +744,13 @@
 				B0215D242015F28100FBF221 /* NSString+md5.m in Sources */,
 				B0215D1F2015F28100FBF221 /* NSDictionary+URLParam.m in Sources */,
 				B0215D262015F28100FBF221 /* NSString+Size.m in Sources */,
+				B0B2B140201C770B00D34762 /* BtcDataResponse.m in Sources */,
 				B0215D252015F28100FBF221 /* NSString+replaceUnicode.m in Sources */,
 				B016B81B201B0C6800633942 /* LoginViewController.m in Sources */,
 				B0F6B37920163E7A005890ED /* MyFirstSecTableViewCell.m in Sources */,
 				B0215D3C2015FBE400FBF221 /* RootViewController.m in Sources */,
 				B0215D1B2015F28100FBF221 /* NSDate+toString.m in Sources */,
+				B0B2B137201C598300D34762 /* BTCSearchViewController.m in Sources */,
 				B0215D2B2015F28100FBF221 /* UILabel+VerticalAlign.m in Sources */,
 				B0F6C21E2018775900F3A29F /* JSHVisitMenuView.m in Sources */,
 				B0215D282015F28100FBF221 /* NSURL+imageURL.m in Sources */,
@@ -741,7 +775,9 @@
 				B0F6B36320161514005890ED /* GlobConditionsViewController.m in Sources */,
 				B0F298442018EA5300CCF08E /* UIDevice+Version.m in Sources */,
 				B0215D1A2015F28100FBF221 /* NSDate+Compare.m in Sources */,
+				B0B2B132201C4B7000D34762 /* LogOutViewController.m in Sources */,
 				B0F6B35E201614FE005890ED /* HomeViewController.m in Sources */,
+				B0B2B13C201C740000D34762 /* BTCSearInfoViewController.m in Sources */,
 				B0B9B4532017517D00306AA3 /* UIView+ThemeChange.m in Sources */,
 				B0F29847201B772100CCF08E /* HTTPBaseResponse.m in Sources */,
 				B0215D222015F28100FBF221 /* NSString+convert.m in Sources */,

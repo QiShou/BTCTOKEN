@@ -16,6 +16,6 @@
 @end
 
 @interface LoginResponse : HTTPBaseResponse
-@property (nonatomic, strong) NSString *HIPPO_WDTOKEN;//储存在本地 退出时候 给到请求头 让后台 改为：HIPPO_WDTOKEN
+@property (nonatomic, strong) NSString *HIPPOWDTOKEN;//储存在本地 退出时候 给到请求头 让后台 改为：HIPPO_WDTOKEN
 @property (nonatomic, strong) NSArray *data;
 @end

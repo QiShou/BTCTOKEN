@@ -30,6 +30,8 @@
 
     self.window.rootViewController = rootVc;
     
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"lightType"];
+    
     return YES;
 }
 

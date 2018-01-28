@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogOutViewController">
+            <connections>
+                <outlet property="emailLabel" destination="nMl-se-6dA" id="wLI-5N-ECb"/>
+                <outlet property="emaillabelNum" destination="GIT-iD-oSP" id="NOa-WL-hwg"/>
+                <outlet property="loginOutBtn" destination="S7o-78-3gq" id="M5j-do-mPk"/>
+                <outlet property="loginView" destination="NeX-Lb-ymD" id="3dg-It-uYb"/>
+                <outlet property="tipLabel" destination="omk-uv-lO9" id="7ff-Sd-hVL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="408"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeX-Lb-ymD">
+                    <rect key="frame" x="0.0" y="0.0" width="252" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已验证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omk-uv-lO9">
+                            <rect key="frame" x="15" y="8" width="40" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIT-iD-oSP">
+                            <rect key="frame" x="231" y="36" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="选择" translatesAutoresizingMaskIntoConstraints="NO" id="7bB-WX-lm3">
+                            <rect key="frame" x="236" y="29" width="8" height="14"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMl-se-6dA">
+                            <rect key="frame" x="15" y="28" width="32.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nMl-se-6dA" firstAttribute="top" secondItem="omk-uv-lO9" secondAttribute="bottom" constant="4" id="4A1-2u-f14"/>
+                        <constraint firstItem="omk-uv-lO9" firstAttribute="top" secondItem="NeX-Lb-ymD" secondAttribute="top" constant="8" id="4N0-o8-5O2"/>
+                        <constraint firstAttribute="height" constant="60" id="CZi-WI-dPc"/>
+                        <constraint firstItem="nMl-se-6dA" firstAttribute="leading" secondItem="NeX-Lb-ymD" secondAttribute="leading" constant="15" id="Jgb-1G-dhA"/>
+                        <constraint firstItem="omk-uv-lO9" firstAttribute="leading" secondItem="NeX-Lb-ymD" secondAttribute="leading" constant="15" id="KCf-iO-6Ac"/>
+                        <constraint firstItem="7bB-WX-lm3" firstAttribute="leading" secondItem="GIT-iD-oSP" secondAttribute="trailing" constant="5" id="PIq-W6-xIT"/>
+                        <constraint firstItem="7bB-WX-lm3" firstAttribute="centerY" secondItem="GIT-iD-oSP" secondAttribute="centerY" id="WRb-z6-17D"/>
+                        <constraint firstAttribute="trailing" secondItem="7bB-WX-lm3" secondAttribute="trailing" constant="8" id="sei-zt-Smj"/>
+                        <constraint firstItem="7bB-WX-lm3" firstAttribute="centerY" secondItem="nMl-se-6dA" secondAttribute="centerY" id="svT-GV-fDs"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7o-78-3gq">
+                    <rect key="frame" x="15" y="70" width="222" height="45"/>
+                    <color key="backgroundColor" red="0.37589913606643677" green="0.75794476270675659" blue="0.75979739427566528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="zWs-5w-inl"/>
+                    </constraints>
+                    <state key="normal" title="退出登录">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="-1" eventType="touchUpInside" id="ETv-YH-1hn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NeX-Lb-ymD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HG5-yo-Zn2"/>
+                <constraint firstItem="S7o-78-3gq" firstAttribute="top" secondItem="NeX-Lb-ymD" secondAttribute="bottom" constant="10" id="Iae-LN-AAw"/>
+                <constraint firstAttribute="trailing" secondItem="S7o-78-3gq" secondAttribute="trailing" constant="15" id="SqL-Ms-roj"/>
+                <constraint firstItem="NeX-Lb-ymD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VrQ-Xt-Cek"/>
+                <constraint firstItem="S7o-78-3gq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="cNS-wp-gkv"/>
+                <constraint firstAttribute="trailing" secondItem="NeX-Lb-ymD" secondAttribute="trailing" id="zmr-Tj-pys"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-9" y="-217"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="选择" width="8" height="14"/>
+    </resources>
+</document>

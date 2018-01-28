@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BTCSearchViewController">
+            <connections>
+                <outlet property="searchView" destination="fhH-1Z-Adf" id="uDX-Gw-TLr"/>
+                <outlet property="serachBar" destination="FHj-a9-8iG" id="7WF-Tx-3Oa"/>
+                <outlet property="tableView" destination="xQT-OE-LXT" id="rLd-9d-Jkb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="602"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhH-1Z-Adf">
+                    <rect key="frame" x="0.0" y="0.0" width="269" height="35"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" placeholder="输入币名搜索" translatesAutoresizingMaskIntoConstraints="NO" id="FHj-a9-8iG">
+                            <rect key="frame" x="0.0" y="0.0" width="269" height="35"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="7hw-R7-lPC"/>
+                        <constraint firstAttribute="trailing" secondItem="FHj-a9-8iG" secondAttribute="trailing" id="FEV-r3-xMf"/>
+                        <constraint firstAttribute="bottom" secondItem="FHj-a9-8iG" secondAttribute="bottom" id="FMv-ld-fnz"/>
+                        <constraint firstItem="FHj-a9-8iG" firstAttribute="leading" secondItem="fhH-1Z-Adf" secondAttribute="leading" id="v6n-sK-Mc6"/>
+                        <constraint firstItem="FHj-a9-8iG" firstAttribute="top" secondItem="fhH-1Z-Adf" secondAttribute="top" id="wiw-pJ-Zxd"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xQT-OE-LXT">
+                    <rect key="frame" x="0.0" y="35" width="269" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fhH-1Z-Adf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IdT-S7-eH5"/>
+                <constraint firstItem="xQT-OE-LXT" firstAttribute="top" secondItem="fhH-1Z-Adf" secondAttribute="bottom" id="KMX-B5-LX8"/>
+                <constraint firstAttribute="trailing" secondItem="xQT-OE-LXT" secondAttribute="trailing" id="Mgo-Hl-os8"/>
+                <constraint firstAttribute="bottom" secondItem="xQT-OE-LXT" secondAttribute="bottom" id="Rgv-cl-f8F"/>
+                <constraint firstAttribute="trailing" secondItem="fhH-1Z-Adf" secondAttribute="trailing" id="gvC-q1-moQ"/>
+                <constraint firstItem="fhH-1Z-Adf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jER-4z-vLF"/>
+                <constraint firstItem="xQT-OE-LXT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wbO-dL-3cH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-138" y="57"/>
+        </view>
+    </objects>
+</document>

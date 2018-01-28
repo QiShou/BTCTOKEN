@@ -21,13 +21,13 @@
 
 
 ///////********************** 正式环境 ******************************/
-#define XMPPHOST                @"jssvm.jslife.com.cn"  // 云服务器主机IP
-#define XMPPPORT                @"7716"                 // 云服务器数据通讯端口
-#define APPSERVERACCOUNT        @"js_service_jcpt"    // 云平台集成服务账号
-#define APPOPENFIREREGION       @"@js-service"      // openfire域
-#define APPSERVERRESOURCE       @"jsservice_master"         // 云服务器资源名
-#define APPIMAGEUPLOAD          @"http://jssvm.jslife.com.cn:7715"    //图片上传地址
-#define MAIN_URL                @"http://jservice.jslife.com.cn:7715/js-service"//http网络请求
+//#define XMPPHOST                @"jssvm.jslife.com.cn"  // 云服务器主机IP
+//#define XMPPPORT                @"7716"                 // 云服务器数据通讯端口
+//#define APPSERVERACCOUNT        @"js_service_jcpt"    // 云平台集成服务账号
+//#define APPOPENFIREREGION       @"@js-service"      // openfire域
+//#define APPSERVERRESOURCE       @"jsservice_master"         // 云服务器资源名
+//#define APPIMAGEUPLOAD          @"http://jssvm.jslife.com.cn:7715"    //图片上传地址
+//#define MAIN_URL                @"http://120.78.210.154:8080"//http网络请求
 
 
 //#define XMPPHOST                @"121.34.253.100"  // 云服务器主机IP

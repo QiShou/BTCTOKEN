@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "JSHVisitMenuView.h"
 #import "HomeCollectionViewCell.h"
+#import "BTCSearchViewController.h"
 @interface HomeViewController ()<UIScrollViewDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>{
     NSInteger _saveIndex;
     BOOL _isClickMenu;
@@ -56,7 +57,8 @@
     
 }
 - (void)leftBarButtonTouchUpInside:(id)sender {
-    
+    BTCSearchViewController *con = [[BTCSearchViewController alloc] init];
+    [self.navigationController pushViewController:con animated:YES];
 }
 -(void)setMenuView{
     

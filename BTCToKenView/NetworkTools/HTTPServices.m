@@ -8,12 +8,15 @@
 
 #import "HTTPServices.h"
 #import "UIDevice+Version.h"
+#import "NSDictionary+JsonString.h"
+
 /// 请求超时时间
 #define kHttpTimeoutInterval  25.0
 @implementation HTTPServices
 
 static HTTPServices *_defaultManager = nil;
 static AFHTTPSessionManager *_httpRequestManager;
+#define MAIN_URL                @"http://120.78.210.154:8080"//http网络请求
 
 + (instancetype)sharedInstance {
 
@@ -31,8 +34,8 @@ static AFHTTPSessionManager *_httpRequestManager;
         _httpRequestManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:config];
         _httpRequestManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"application/json", @"text/json",@"text/html", nil];
         _httpRequestManager.requestSerializer = [AFHTTPRequestSerializer serializer];
-//         _httpRequestManager.responseSerializer = [AFJSONResponseSerializer serializer];
-      
+//        _httpRequestManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+
     });
     
     return _defaultManager;
@@ -192,10 +195,18 @@ static AFHTTPSessionManager *_httpRequestManager;
     
     //设置请求头 
     if ([strURLSuffix isEqualToString:AC_Logout]) {
-        NSString *string = [[NSUserDefaults standardUserDefaults] objectForKey:@"HIPPO-WDTOKEN"];
-        [_httpRequestManager.requestSerializer setValue:string forHTTPHeaderField:@"HIPPO-WDTOKEN"];
+        NSString *string = [[NSUserDefaults standardUserDefaults] objectForKey:@"HIPPOWDTOKEN"];
+        [_httpRequestManager.requestSerializer setValue:string forHTTPHeaderField:@"HIPPOWDTOKEN"];
     }
+    
+//    [_httpRequestManager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
+//    [_httpRequestManager.requestSerializer addAcceptableContentTypes:[NSSet setWithObject:@"text/html"]];//加上这句话
+
+//    NSData *dictData = [NSJSONSerialization dataWithJSONObject:param options:NSJSONWritingPrettyPrinted error:nil];
+//    NSString *jsonString = [[NSString alloc]initWithData:dictData encoding:NSUTF8StringEncoding];
+//    NSString *jsonString =  [self convertToJsonData:param];
+    
     return [_httpRequestManager POST:strURL parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -210,6 +221,29 @@ static AFHTTPSessionManager *_httpRequestManager;
     
     
 }
-
+-(NSString *)convertToJsonData:(NSDictionary *)dict {
+    
+    NSError *error;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    
+    NSString *jsonString;
+    
+    if (!jsonData) {
+        NSLog(@"%@",error);
+    }else{
+        jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    NSMutableString *mutStr = [NSMutableString stringWithString:jsonString];
+    NSRange range = {0,jsonString.length};
+    //去掉字符串中的空格
+    [mutStr replaceOccurrencesOfString:@" " withString:@"" options:NSLiteralSearch range:range];
+    NSRange range2 = {0,mutStr.length};
+    //去掉字符串中的换行符
+    [mutStr replaceOccurrencesOfString:@"\n" withString:@"" options:NSLiteralSearch range:range2];
+    
+    return mutStr;
+    
+}
 
 @end

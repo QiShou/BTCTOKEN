@@ -84,7 +84,7 @@
         [cell.xieyiBtn setHidden:YES];
         [cell.forgitBtn setTitle:@"忘记密码？" forState:UIControlStateNormal];
         [cell.forgitBtn setHidden:NO];
-        
+        [cell.longinBtn setTitle:@"登陆" forState: UIControlStateNormal];
 
     } else {
         [cell.tipLabel setHidden:NO];
@@ -92,7 +92,8 @@
         [cell.forgitBtn setTitle:@"" forState:UIControlStateNormal];
         [cell.forgitBtn setHidden:YES];
         cell.labrlheigth = 0;
-        
+        [cell.longinBtn setTitle:@"注册" forState: UIControlStateNormal];
+
     }
     if (!cell.viewController) {
         cell.viewController = self;

@@ -11,6 +11,7 @@
 #import "LoginTableViewCell.h"
 #import "MySecTableViewCell.h"
 #import "LoginViewController.h"
+#import "LogOutViewController.h"
 @interface MYInfoViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_secArr;
     NSArray *_thdArr;
@@ -66,6 +67,13 @@
             [ThemeManage shareThemeManage].isNight = ![ThemeManage shareThemeManage].isNight;
             [[NSNotificationCenter defaultCenter] postNotificationName:@"changeColor" object:nil];
             [[NSUserDefaults standardUserDefaults] setBool:[ThemeManage shareThemeManage].isNight forKey:@"night"];
+            if (sender.isOn) {
+                [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"lightType"];
+
+            } else {
+                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"lightType"];
+
+            }
         }
             break;
         case 1002: {
@@ -94,6 +102,8 @@
     UITableViewCell *cell;
     switch (indexPath.section) {
         case 0:{
+            
+          
             LoginTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LoginTableViewCell" forIndexPath:indexPath];
             cell.loginLabel.text = @"登录";
             [cell.loginLabel NightWithType:UIViewColorTypeNormal];
@@ -146,13 +156,22 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     switch (indexPath.section) {
         case 0:{
-            LoginViewController *con = [[LoginViewController alloc] init];
+            
+            LogOutViewController *con = [[LogOutViewController alloc] init];
             con.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:con animated:YES];
-//            [self presentViewController:con animated:YES completion:^{
             
-//            }];
-         
+//            NSString *hippowdtoken = [[NSUserDefaults standardUserDefaults] objectForKey:@"HIPPOWDTOKEN"];
+//            if (hippowdtoken && ![hippowdtoken isEqualToString:@""]) {
+//                LogOutViewController *con = [[LogOutViewController alloc] init];
+//                con.hidesBottomBarWhenPushed = YES;
+//                [self.navigationController pushViewController:con animated:YES];
+//            } else {
+//
+//                LoginViewController *con = [[LoginViewController alloc] init];
+//                con.hidesBottomBarWhenPushed = YES;
+//                [self.navigationController pushViewController:con animated:YES];
+//            }
         }
             break;
         case 1:{
